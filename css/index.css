@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
+
+*{
+  font-family: montserrat;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #141414;
+  
+  line-height: 1.7;
+  color: #fff;
+}
+.bg-text-container {
+    z-index: -999;
+    transform: skewY(-5deg);
+}
+@keyframes text-scrolling {
+  0% { transform: translate(-100%); }
+  100% { transform: translate(0%); }
+}
+.animate-text, .animate-text.left {
+  animation: text-scrolling 20s linear infinite;
+  will-change: transform;
+  display: block;
+  white-space: nowrap;
+}
+.animate-text.left {
+  animation-direction: reverse;
+}
+.bg-text-container span {
+  font-size: 280px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ED1212;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0.75;
+  min-width: auto;
+  font-weight: 800;
+}
+
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%; 
+  margin: 0 auto;
+}
+.conrainer .col {
+    max-width: 1000px;
+    margin: 0;
+}
+.conrainer .col h1 {
+  font-size: 80px;
+  margin: 0;
+}
+.conrainer .col p {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+
+/* footer */
+footer {
+    color: #ffff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+footer .set {
+    display: flex;
+    justify-content: center;
+}
+
+footer .top {
+    color: #ffff;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+}
+
+footer .top p {
+    margin-right: 10px;
+}
+
+footer a {
+    color: #aaa;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+footer span {
+    margin-right: 15px;
+}
