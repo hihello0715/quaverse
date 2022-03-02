@@ -73,7 +73,7 @@ header .right .language a {
 }
 
 header .right .language a.on {
-  color: #ED1212;
+  color: #ed1212;
   font-weight: 600;
 }
 
@@ -134,7 +134,7 @@ header .right .language a.on {
   margin: 0;
 }
 
-.gnb ul{
+.gnb ul {
   display: flex;
   position: absolute;
   right: -250px;
@@ -142,14 +142,14 @@ header .right .language a.on {
   transform: translateY(-50%);
   transform: rotate(90deg);
 }
-.gnb a{
+.gnb a {
   color: #fff;
   margin: 0 20px;
   font-weight: 600;
 }
 
 /* footer */
-footer{
+footer {
   position: absolute;
   bottom: 20px;
   display: flex;
@@ -157,22 +157,28 @@ footer{
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-size: 13px;
 }
-footer a{color: #aaa;}
-footer .left{
+footer a {
+  color: #aaa;
+}
+footer .left {
   border-right: 1px solid #aaa;
   padding-right: 20px;
 }
-footer .left .top, footer .left .bottom{
+footer .left .top,
+footer .left .bottom {
   display: flex;
   align-items: center;
   height: 25px;
 }
-footer .left .top a{
+footer .left .top a {
   margin-left: 20px;
   color: #fff;
 }
-footer .left .bottom a{margin-left: 20px;}
-footer .right a{
+footer .left .bottom a {
+  margin-left: 20px;
+}
+footer .right a {
   margin-left: 20px;
 }
