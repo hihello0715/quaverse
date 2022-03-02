@@ -1,13 +1,15 @@
 @charset "UTF-8";
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   font-family: montserrat;
+  color: #fff;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
@@ -18,39 +20,44 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 body {
   background: #141414;
 }
 
 .inner {
   width: 1200px;
-  margin: auto 0;
+  margin: 0 auto;
 }
 
 /* header */
-header{
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-}
 header .inner {
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
 }
-header a{color: #fff;}
-header .logo span{
+
+header a {
+  color: #fff;
+}
+
+header .logo span {
   color: #aaa;
   font-size: 10px;
 }
-header .logo img{width: 150px;}
-header .right{
+
+header .logo img {
+  width: 150px;
+}
+
+header .right {
   display: flex;
   width: 30%;
   justify-content: space-between;
   align-items: center;
 }
-header .right .button{
+
+header .right .button {
   display: flex;
   border: 1px solid #fff;
   border-radius: 30px;
@@ -60,15 +67,19 @@ header .right .button{
   justify-content: space-between;
   padding: 0 20px;
 }
-header .right .language a{margin-left: 10px;}
-header .right .language a.on{
+
+header .right .language a {
+  margin-left: 10px;
+}
+
+header .right .language a.on {
   color: #ED1212;
   font-weight: 600;
 }
 
 /* body */
 .bg-text-container {
-  top: 30%;
+  top: 25%;
   position: absolute;
   z-index: -999;
   transform: skewY(-5deg);
@@ -97,7 +108,7 @@ header .right .language a.on{
   -webkit-text-stroke: 2px #ed1212;
   text-transform: uppercase;
   display: inline-block;
-  line-height: 0.75;
+  line-height: 1;
   min-width: auto;
   font-weight: 800;
 }
