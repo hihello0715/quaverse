@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   font-family: montserrat;
@@ -9,33 +9,42 @@ a {
   text-decoration: none;
 }
 
-html, body{
+html,
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-body{background: #141414;}
+body {
+  background: #141414;
+}
 
-.inner{
+.inner {
   width: 1200px;
   margin: auto 0;
 }
 
 /* header */
-header{
+header {
   display: flex;
   align-items: center;
   height: 100px;
   justify-content: center;
 }
-header .inner{
+header .inner {
   display: flex;
   justify-content: space-between;
 }
-header a{color: #fff;}
-header .logo span{color: #aaa;}
-header .logo img{width: 150px;}
-header .right{
+header a {
+  color: #fff;
+}
+header .logo span {
+  color: #aaa;
+}
+header .logo img {
+  width: 150px;
+}
+header .right {
   display: flex;
   width: 20%;
   justify-content: space-between;
@@ -50,8 +59,12 @@ header .right{
   transform: skewY(-5deg);
 }
 @keyframes text-scrolling {
-  0% { transform: translate(-100%); }
-  100% { transform: translate(0%); }
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 .animate-text {
   animation: text-scrolling 20s linear infinite;
@@ -60,11 +73,13 @@ header .right{
   position: relative;
   white-space: nowrap;
 }
-.animate-text.left{animation-direction: reverse;}
+.animate-text.left {
+  animation-direction: reverse;
+}
 .animate-text span {
   font-size: 280px;
   color: transparent;
-  -webkit-text-stroke: 2px #ED1212;
+  -webkit-text-stroke: 2px #ed1212;
   text-transform: uppercase;
   display: inline-block;
   line-height: 0.75;
@@ -79,7 +94,7 @@ header .right{
   transform: translate(-50%, -50%);
   padding: 30px;
   max-width: 1000px;
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
   color: #fff;
 }
@@ -94,27 +109,42 @@ header .right{
 }
 
 /* footer */
-footer{
+footer {
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 15px;
   color: #fff;
   text-align: center;
   height: 100px;
+  width: 1200px;
   align-items: center;
+  justify-content: space-between;
 }
-footer .top{
+footer .footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+}
+footer .top {
   display: flex;
   justify-content: center;
 }
-footer a{
+footer .text {
+  width: 1000px;
+}
+footer a {
   color: #fff;
   margin-left: 20px;
 }
-footer .sns{
+footer .sns {
+  margin-left: 10px;
+  position: absolute;
+  right: 0%;
   font-size: 50px;
   display: flex;
   justify-content: space-between;
