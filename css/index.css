@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   font-family: montserrat;
@@ -9,89 +9,56 @@ a {
   text-decoration: none;
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+  background: #141414;
+  overflow: hidden;
+}
+
 .inner{
   width: 1200px;
-  margin: 0 auto;
+  margin: auto 0;
 }
 
-header {
-  display: block;
-}
-header .inner{
-  width: 1200px;
-  height: 65px;
-}
-
-body {
-  overflow: hidden;
-  width: 100%;
+/* header */
+header{
   display: flex;
   align-items: center;
-  background: #141414;
-  line-height: 1.7;
-  color: #fff;
+  height: 100px;
+  justify-content: center;
 }
-.bg-text-container {
-  transform: skewY(-5deg);
-  z-index: -999;
+header .inner{
+  display: flex;
+  justify-content: space-between;
 }
-@keyframes text-scrolling {
-  0% {transform: translate(-100%);}
-  100% {transform: translate(0%);}
-}
-.animate-text,
-.animate-text.left {
-  animation: text-scrolling 20s linear infinite;
-  will-change: transform;
-  display: block;
-  white-space: nowrap;
-}
-.animate-text.left {
-  animation-direction: reverse;
-}
-.bg-text-container span {
-  font-size: 280px;
-  color: transparent;
-  -webkit-text-stroke: 2px #ed1212;
-  text-transform: uppercase;
-  display: inline-block;
-  line-height: 0.75;
-  min-width: auto;
-  font-weight: 800;
+header a{color: #fff;}
+header .logo span{color: #aaa;}
+header .logo img{width: 150px;}
+header .right{
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
 }
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-  max-width: 1200px;
-  width: 100%;
-}
-.container .col {
-  max-width: 1000px;
-  margin: 0;
-}
-.container .col h1 {
-  font-size: 80px;
-  margin: 0;
-}
-.container .col p {
-  font-size: 18px;
-  font-weight: 200;
-}
+
+/* body */
+
 
 /* footer */
 footer{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 15px;
   color: #fff;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
   text-align: center;
+}
+footer .footer{
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
 footer .top{
   display: flex;
@@ -100,4 +67,7 @@ footer .top{
 footer a{
   color: #fff;
   margin-left: 20px;
+}
+footer .sns{
+  margin-left: 50px;
 }
