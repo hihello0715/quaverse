@@ -82,7 +82,7 @@ header .right .language a.on {
 /* body */
 .title{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 .title h1{position: relative;}
@@ -95,12 +95,41 @@ header .right .language a.on {
     height: 1px;
     background-color: #fff;
 }
-.title .tap{
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
+.title .tap{display: flex;}
+.title .tap a{padding: 0 15px;}
+.title .tap a:hover{color: #ED1212;}
+.title .tap a.on{
+    position: relative;
+    color: #ED1212;
+    font-weight: 600;
+}
+.title .tap a.on::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ED1212;
 }
 
+.main{margin: 50px 0;}
+.main .text{text-align: center;}
+.main .text img{width: 170px;}
+.main .text span{display: block;}
+.main .cr{
+    display: flex;
+    justify-content: space-between;
+}
+.main .cr .set{
+    background: rgba(255, 255, 255, 0.8);
+    width: 230px;
+    text-align: center;
+    height: 230px;
+    border-radius: 50%;
+}
 
 /* gnb */
 .gnb ul {
@@ -118,8 +147,11 @@ header .right .language a.on {
     font-weight: 600;
 }
 
+.gnb a.on{color: #ED1212;}
+
 /* footer */
 footer {
+    font-size: 13px;
     position: absolute;
     bottom: 20px;
     display: flex;
