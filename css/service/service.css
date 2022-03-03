@@ -124,7 +124,14 @@ header .right .language a.on {
   background-color: #ed1212;
 }
 
+/* service main*/
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
 .service_icon {
+  display: flex;
   width: 120px;
   height: 120px;
   margin-top: 60px;
@@ -133,12 +140,6 @@ header .right .language a.on {
   display: flex;
   justify-content: space-between;
   text-align: center;
-}
-/* service main*/
-.subtitle {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
 }
 .content {
   width: 566px;
@@ -152,6 +153,9 @@ header .right .language a.on {
   border-radius: 15px;
   font-size: 20px;
 }
+.content image {
+  display: flex;
+}
 .content span {
   display: block;
 }
@@ -160,6 +164,7 @@ header .right .language a.on {
   font-size: 40px;
   font-weight: bold;
 }
+
 .detail_btn {
   display: flex;
   position: absolute;
