@@ -173,6 +173,13 @@ header .right .language a.on {
   font-weight: 500;
 }
 
+.main .cr .set h3{
+    z-index: 1;
+    font-size: 30px;
+    color: #ED1212;
+}
+.main .cr .set p{color: #141414;}
+
 /* gnb */
 .gnb ul {
   display: flex;
