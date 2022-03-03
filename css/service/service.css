@@ -101,17 +101,21 @@ header .right .language a.on {
 .title .tap {
   display: flex;
 }
+
 .title .tap a {
   padding: 0 15px;
 }
+
 .title .tap a:hover {
-  color: #ed1212;
+  color: #ED1212;
 }
+
 .title .tap a.on {
   position: relative;
-  color: #ed1212;
+  color: #ED1212;
   font-weight: 600;
 }
+
 .title .tap a.on::after {
   position: absolute;
   content: "";
@@ -121,7 +125,7 @@ header .right .language a.on {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #ed1212;
+  background-color: #ED1212;
 }
 
 .service_icon {
