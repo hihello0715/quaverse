@@ -130,6 +130,7 @@ header .right .language a.on {
   width: 250px;
   height: 50px;
   justify-content: center;
+  color: #ed1212;
   border: 1px solid #ed1212;
   box-sizing: border-box;
 }
