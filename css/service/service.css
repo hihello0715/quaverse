@@ -129,7 +129,6 @@ header .right .language a.on {
 }
 
 /* service main*/
-
 .content {
   display: flex;
   flex-direction: column;
@@ -159,11 +158,11 @@ header .right .language a.on {
 .service_icon{
   background: #ed1212;
   border-radius: 50%;
-  padding: 15px;
+  padding: 25px;
 }
 .service_icon img{
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 .service_content {
   display: flex;
@@ -178,7 +177,13 @@ header .right .language a.on {
   align-items: center;
   color: #ed1212;
   border: 1px solid #ed1212;
+  transition: all 0.3s;
   box-sizing: border-box;
+}
+.detail_btn:hover{
+  color: #fff;
+  background: #ed1212;
+  transition: all 0.3s;
 }
 
 /*service edumetaverse*/
