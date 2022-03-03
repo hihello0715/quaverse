@@ -2,13 +2,9 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
-  font-family: montserrat;
-  color: #fff;
-}
-
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul {
@@ -23,6 +19,8 @@ body {
 }
 
 body {
+  font-family: montserrat;
+  color: #fff;
   background: #141414;
 }
 
@@ -103,14 +101,15 @@ header .right .language a.on {
 }
 .title .tap a {
   padding: 0 15px;
+  font-weight: 600;
 }
 .title .tap a:hover {
+  transition: all 0.3s;
   color: #ed1212;
 }
 .title .tap a.on {
   position: relative;
   color: #ed1212;
-  font-weight: 600;
 }
 .title .tap a.on::after {
   position: absolute;
@@ -125,21 +124,28 @@ header .right .language a.on {
 }
 
 .main {
-  margin: 50px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.5;
+  text-align: center;
 }
-.main .set_box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+.main .text {
+  margin-bottom: 80px;
 }
-.main .set {
-  width: 350px;
+.main .button {
+  border: 1px solid #ed1212;
+  color: #ed1212;
+  padding: 20px 100px;
+  transition: all 0.3s;
+  font-size: 20px;
 }
-.main .set .img {
-  background: url(../../img/vrar_background.jpg) center;
-  background-size: 100%;
-  width: 350px;
-  height: 200px;
+.main .button:hover {
+  color: #fff;
+  background: #ed1212;
+  transition: all 0.3s;
 }
 
 /* gnb */
@@ -164,11 +170,9 @@ header .right .language a.on {
 
 /* footer */
 footer {
-  background: #141414;
   font-size: 13px;
   position: absolute;
-  bottom: 0;
-  padding-bottom: 20px;
+  bottom: 20px;
   display: flex;
   color: #aaa;
   justify-content: center;

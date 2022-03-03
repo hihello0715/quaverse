@@ -82,6 +82,7 @@ header .right .language a.on {
 /* body */
 
 .title {
+  margin-top: 20px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -107,12 +108,12 @@ header .right .language a.on {
 }
 
 .title .tap a:hover {
-  color: #ED1212;
+  color: #ed1212;
 }
 
 .title .tap a.on {
   position: relative;
-  color: #ED1212;
+  color: #ed1212;
   font-weight: 600;
 }
 
@@ -125,7 +126,7 @@ header .right .language a.on {
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #ED1212;
+  background-color: #ed1212;
 }
 
 /* service main*/
@@ -135,8 +136,8 @@ header .right .language a.on {
   align-items: center;
   justify-content: space-between;
   padding: 60px;
-  width: 566px;
-  height: 594px;
+  width: 550px;
+  height: 580px;
   margin-top: 40px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -145,7 +146,7 @@ header .right .language a.on {
   font-size: 20px;
   line-height: 0.8;
 }
-.content .explanation{
+.content .explanation {
   line-height: 0.5;
   margin-top: 50px;
   font-size: 15px;
@@ -155,12 +156,12 @@ header .right .language a.on {
   font-size: 24px;
   font-weight: 700;
 }
-.service_icon{
+.service_icon {
   background: #ed1212;
   border-radius: 50%;
   padding: 25px;
 }
-.service_icon img{
+.service_icon img {
   width: 100px;
   height: 100px;
 }
@@ -180,7 +181,7 @@ header .right .language a.on {
   transition: all 0.3s;
   box-sizing: border-box;
 }
-.detail_btn:hover{
+.detail_btn:hover {
   color: #fff;
   background: #ed1212;
   transition: all 0.3s;
