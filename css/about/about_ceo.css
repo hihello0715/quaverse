@@ -126,6 +126,8 @@ header .right .language a.on {
 .main {
   font-family: "Noto Sans KR", sans-serif;
   margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .main h1 {
   margin-bottom: 80px;
@@ -137,6 +139,9 @@ header .right .language a.on {
 }
 .main span {
   display: block;
+}
+.main img {
+  width: 450px;
 }
 
 /* gnb */
