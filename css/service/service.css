@@ -83,7 +83,7 @@ header .right .language a.on {
 
 .title {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .title h1 {
