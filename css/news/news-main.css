@@ -115,37 +115,21 @@ header .right .language a.on {
     background-color: #ED1212;
 }
 
-.main{margin: 50px 0;}
-.main .text{text-align: center;}
-.main .text img{width: 170px;}
-.main .text span{display: block;}
-.main .cr{
-    position: relative;
+.main{
+    margin: 50px 0;
 }
-.main .cr .set{
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    width: 350px;
-    text-align: center;
-    height: 350px;
-    border-radius: 50%;
-    margin-top: 50px;
+.main .set_box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 0;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
-.main .cr .set._2{left: 25%;}
-.main .cr .set._3{left: 50%;}
-.main .cr .set._4{left: 75%;}
-
-.main .cr .set h3{
-    z-index: 1;
-    font-size: 30px;
-    color: #ED1212;
+.main .set{width: 350px;}
+.main .set .img{
+    background: url(../../img/vrar_background.jpg) center;
+    background-size: 100%;
+    width: 350px;
+    height: 200px;
 }
-.main .cr .set p{color: #141414;}
 
 /* gnb */
 .gnb ul {
@@ -167,9 +151,11 @@ header .right .language a.on {
 
 /* footer */
 footer {
+    background: #141414;
     font-size: 13px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
+    padding-bottom: 20px;
     display: flex;
     color: #aaa;
     justify-content: center;

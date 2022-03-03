@@ -116,36 +116,6 @@ header .right .language a.on {
 }
 
 .main{margin: 50px 0;}
-.main .text{text-align: center;}
-.main .text img{width: 170px;}
-.main .text span{display: block;}
-.main .cr{
-    position: relative;
-}
-.main .cr .set{
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    width: 350px;
-    text-align: center;
-    height: 350px;
-    border-radius: 50%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 0;
-}
-.main .cr .set._2{left: 25%;}
-.main .cr .set._3{left: 50%;}
-.main .cr .set._4{left: 75%;}
-
-.main .cr .set h3{
-    z-index: 1;
-    font-size: 30px;
-    color: #ED1212;
-}
-.main .cr .set p{color: #141414;}
 
 /* gnb */
 .gnb ul {
