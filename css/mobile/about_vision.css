@@ -5,13 +5,38 @@
   height: 100%;
 }
 
-.main .left h3:nth-child(4) {
-  margin-bottom: 30px;
-}
 .main {
-  margin: 0;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
+  margin-top: 0;
 }
 .main img {
   display: none;
+}
+
+.main .cr .set {
+  width: 180px;
+  height: 180px;
+  line-height: 1;
+  text-align: center;
+}
+.main .cr .set h3 {
+  height: 20px;
+  font-size: 25px;
+}
+
+.main .cr .set._2,
+.main .cr .set._4 {
+  left: 50%;
+}
+.main .cr .set._3 {
+  left: 0;
+}
+.main .cr .set._3,
+.main .cr .set._4 {
+  margin-top: 200px;
+}
+
+.main .cr .set span {
+  display: block;
+  line-height: 1.2;
 }

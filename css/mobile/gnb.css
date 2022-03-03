@@ -44,6 +44,9 @@ header .right i {
 .title .tap {
   display: block;
 }
+.tap a {
+  font-size: 12px;
+}
 .title .tap a.on::after {
   left: 0;
   top: 50%;

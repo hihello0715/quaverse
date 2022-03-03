@@ -11,6 +11,9 @@
 .main img {
   display: none;
 }
+.main h1 {
+  margin-bottom: 35px;
+}
 .main p,
 span {
   font-size: 13px;
