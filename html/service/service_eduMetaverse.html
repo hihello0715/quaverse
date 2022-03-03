@@ -12,7 +12,7 @@
 <header>
     <div class="inner">
         <a href="../../index.html" class="logo">
-            <img src="../../img/logo-quaverse.png" alt="logo">
+            <img src="../../img/logo-quaverse.png" alt="logo" />
             <span>AI Digital Aquarium</span>
         </a>
         <div class="right">
@@ -23,6 +23,12 @@
                 <a href="#">EN</a>
                 <a href="#">JP</a>
             </div>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="popmenu">
+            <span>죄송합니다.<br />준비중입니다.</span>
+            <div class="exit">닫기</div>
         </div>
     </div>
 </header>
@@ -57,10 +63,11 @@
             <li><a href="./service.html" class="on">SERVICE</a></li>
             <li><a href="../business/business-main.html">BUSINESS</a></li>
             <li><a href="../news/news-main.html">NEWS</a></li>
-            <li><a href="#">COMMUNITY</a></li>
+            <li><a id="popup_contents">COMMUNITY</a></li>
         </ul>
     </div>
-
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/popup.js"></script>
 </body>
 
 <footer>

@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   font-family: montserrat;
-  color: #fff;
 }
 
 a {
@@ -19,6 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  color: #fff;
 }
 
 body {
@@ -122,7 +122,6 @@ header .right .language a.on {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
 }
 .container h1 {
   font-size: 90px;
@@ -147,7 +146,55 @@ header .right .language a.on {
   margin: 0 20px;
   font-weight: 600;
 }
+/*팝업창*/
+#popup {
+  display: none; /*숨기기*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
 
+#popmenu {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+}
+#popmenu img {
+  display: flex;
+}
+#popmenu span {
+  display: block;
+  font-size: 20px;
+}
+
+.exit {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #ed1212;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*팝업창 본문내용*/
+#contents {
+  cursor: pointer;
+}
 /* footer */
 footer {
   position: absolute;
