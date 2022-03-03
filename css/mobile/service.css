@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*메인*/
+.content {
+  padding: 15px;
+  width: 280px;
+  height: 220px;
+}
+.service_content {
+  display: block;
+  text-align: center;
+}
+.service_icon img {
+  width: 40px;
+  height: 40px;
+}
+.service_icon {
+  padding: 15px;
+}
+.content h2 {
+  font-size: 15px;
+}
+.content p {
+  font-size: 12px;
+}
+.content .explanation {
+  line-height: 0.5;
+  margin-top: 0px;
+  font-size: 15px;
+}
+/*서비스 탭*/
+.detail_btn {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+}
+.tap a {
+  font-size: 12px;
+}
+/*서비스 서브 타이틀*/
+.eduMetaverse_video video {
+  width: 290px;
+  height: 163.125px;
+}
+
+.video_content span {
+  font-size: 16px;
+  padding-right: 16px;
+}
