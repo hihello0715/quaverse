@@ -275,3 +275,12 @@ jQuery(document).ready(function($){
 		return window.getComputedStyle(document.querySelector('.main'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 });
+
+var iw = window.innerWidth;
+if (iw < 641) {
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
+};

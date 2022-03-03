@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QUAVESRE</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="../../css/about/about_vision.css">
-  <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/about_ceom.css">
+  <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/footer.css">
+  <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/gnb.css">
+  <link rel="stylesheet" media="all and (max-width: 640px)" href="../../css/mobile/about_vision.css">
 </head>
 
 <header>
@@ -42,28 +45,31 @@
     <div class="main">
       <div class="text">
         <h1>What is <img src="../../img/logo - quatops.png">?</h1>
-        <p>쿠아탑스는  메타버스 수중 세계로 자연을 보호하며
+        <p>쿠아탑스는 메타버스 수중 세계로 자연을 보호하며
           <span>미래와 사람들과의 커뮤케이션 활성화를 추구하는 기업입니다.</span>
         </p>
       </div>
-      <div class="cr">
-        <div class="set _1">
-          <h3>Growth</h3>
-          <p>빠른 사업 성장력</p>
-        </div>
-        <div class="set _2">
-          <h3>Creative Contents</h3>
-          <p>독창적인 컨텐츠</p>
-        </div>
-        <div class="set _3">
-          <h3>Experience</h3>
-          <p>수 십년간의 수족관 사업 경험 보유</p>
-        </div>
-        <div class="set _4">
-          <h3>Export</h3>
-          <p>수족관 용품 국내, 해외 수출</p>
+      <div class="swiper mySwiper">
+        <div class="cr swiper-wrapper">
+          <div class="set _1 swiper-slide">
+            <h3>Growth</h3>
+            <p>빠른 사업 성장력</p>
+          </div>
+          <div class="set _2 swiper-slide">
+            <h3>Creative Contents</h3>
+            <p>독창적인 컨텐츠</p>
+          </div>
+          <div class="set _3 swiper-slide">
+            <h3>Experience</h3>
+            <p>수 십년간의 수족관 사업 경험 보유</p>
+          </div>
+          <div class="set _4 swiper-slide">
+            <h3>Export</h3>
+            <p>수족관 용품 국내, 해외 수출</p>
+          </div>
         </div>
       </div>
+      
     </div>
   </div>
 
@@ -76,6 +82,9 @@
       <li><a href="#">COMMUNITY</a></li>
     </ul>
   </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../../js/about.js"></script>
 
 </body>
 

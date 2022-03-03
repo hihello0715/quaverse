@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+footer {
+  bottom: 10px;
+  font-size: 10px;
+}
+footer .left .top,
+footer .left .bottom {
+  display: block;
+  height: auto;
+}
+footer .left .top a,
+footer .left .bottom a {
+  margin: 0;
+}
+footer .left p span {
+  display: block;
+}
+
+footer .right a {
+  margin: 0;
+}
+footer .right {
+  width: 25%;
+  padding-left: 20px;
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.inner {
+  width: 320px;
+  touch-action: none;
+}
+
+header .logo img {
+  width: 100px;
+}
+header .logo span {
+  display: block;
+}
+.language a {
+  display: none;
+}
+.language a.on {
+  display: block;
+}
+header .right {
+  width: 60%;
+}
+header .right .button {
+  width: 65px;
+  padding: 0 10px;
+}
+header .right i {
+  display: none;
+}
+.gnb ul {
+  right: -250px;
+  top: 40%;
+}
+.gnb a {
+  margin: 0 15px;
+}

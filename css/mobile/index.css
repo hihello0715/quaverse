@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.container p {
+  width: 80%;
+}
+.container {
+  width: 320px;
+}
+.container h1 {
+  font-size: 30px;
+}
+.container .col span {
+  display: block;
+}
