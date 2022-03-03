@@ -34,3 +34,18 @@ header .right i {
 .gnb a {
   margin: 0 15px;
 }
+.title {
+  margin: 0;
+  align-items: flex-start;
+}
+.title h1 {
+  height: 40px;
+}
+.title .tap {
+  display: block;
+}
+.title .tap a.on::after {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
