@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  font-family: montserrat;
+  color: #fff;
+  background: #141414;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+header .inner {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+}
+
+header a {
+  color: #fff;
+}
+
+header .logo span {
+  color: #aaa;
+  font-size: 10px;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .right {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .right .button {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header .right .language a {
+  margin-left: 10px;
+}
+
+header .right .language a.on {
+  color: #ed1212;
+  font-weight: 600;
+}
+
+/* body */
+.title {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title h1 {
+  position: relative;
+}
+.title h1::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+}
+.title .tap {
+  display: flex;
+}
+.title .tap a {
+  padding: 0 15px;
+  font-weight: 600;
+}
+.title .tap a:hover {
+  transition: all 0.3s;
+  color: #ed1212;
+}
+.title .tap a.on {
+  position: relative;
+  color: #ed1212;
+}
+.title .tap a.on::after {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ed1212;
+}
+
+.main {
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.5;
+  text-align: center;
+}
+.main .text {
+  margin-bottom: 80px;
+}
+.main .button {
+  border: 1px solid #ed1212;
+  color: #ed1212;
+  padding: 20px 100px;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+.main .button:hover {
+  color: #fff;
+  background: #ed1212;
+  transition: all 0.3s;
+}
+
+/* gnb */
+.gnb ul {
+  display: flex;
+  position: absolute;
+  right: -250px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+}
+
+.gnb a {
+  color: #fff;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.gnb a.on {
+  color: #ed1212;
+}
+
+/* footer */
+footer {
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  color: #aaa;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer .left {
+  border-right: 1px solid #aaa;
+  padding-right: 20px;
+}
+
+footer .left .top,
+footer .left .bottom {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+footer .left .top a {
+  margin-left: 20px;
+  color: #fff;
+}
+
+footer .left .bottom a {
+  margin-left: 20px;
+}
+
+footer .right a {
+  margin-left: 20px;
+}
