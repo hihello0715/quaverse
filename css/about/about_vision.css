@@ -16,7 +16,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -142,12 +142,13 @@ header .right .language a.on {
 }
 .main .cr {
   position: relative;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 .main .cr .set {
   background: rgba(255, 255, 255, 0.8);
-  width: 350px;
-  height: 350px;
+  width: 28vh;
+  height: 28vh;
   border-radius: 50%;
   position: absolute;
   margin-top: 50px;
@@ -168,15 +169,32 @@ header .right .language a.on {
 }
 .main .cr .set h3 {
   color: #ed1212;
-  font-size: 32px;
+  font-size: 24px;
   z-index: 1;
-  font-family: montserrat;
+  font-family: 'montserrat';
+  text-align: center;
+  line-height: 24px;
 }
 .main .cr .set p {
   color: #141414;
   font-weight: 500;
+  word-break: keep-all;
+  line-height: 20px;
+  text-align: center;
 }
-
+.main .cr .set:nth-child(2) p {
+  margin-top: -5px;
+  line-height: 40px;
+}
+.main .cr .set:nth-child(3) p {
+  margin-top: 25px;
+  line-height: 18px;
+  height: 10px;
+}
+.main .cr .set:nth-child(3) h3 {
+  height: 10px;
+  margin-top: 10px;
+}
 .main .cr .set h3 {
   z-index: 1;
   font-size: 30px;

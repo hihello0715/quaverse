@@ -2,7 +2,6 @@
 
 .inner {
   width: 320px;
-  touch-action: none;
 }
 
 header .logo img {
@@ -23,6 +22,7 @@ header .right {
 header .right .button {
   width: 65px;
   padding: 0 10px;
+  text-align: center;
 }
 header .right i {
   display: none;

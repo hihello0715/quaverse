@@ -2,119 +2,106 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QUAVESRE</title>
-  <link rel="stylesheet" type="text/css" href="../css/index.css" />
-  <link rel="stylesheet" type="text/css" href="../css/loading.css" />
-  <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/index.cs" />
-</head>
-
-<head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUAVESRE</title>
   <link rel="stylesheet" type="text/css" href="../css/index.css">
-  <link rel="stylesheet" type="text/css" href="../css/loading.css">
-  <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/index.css">
-  <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/footer.css">
-  <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/gnb.css">
-</head>
-
-<header>
-  <div class="inner">
-    <a href="../../index.html" class="logo">
-      <img src="../../img/logo-quaverse.png" alt="logo" />
-      <span>Under Water Metaverse</span>
-    </a>
-    <div class="right">
-      <a href="#" class="button">다운로드<i class="fas fa-arrow-down"></i></a>
-      <a href="#">지원</a>
-      <div class="language">
-        <a href="#" class="on">KR</a>
-        <a href="#">EN</a>
-        <a href="#">JP</a>
-      </div>
-    </div>
-  </div>
-</header>
+  <script src="https://kit.fontawesome.com/f1268f802e.js" crossorigin="anonymous"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/index-swipe.js"></script>
 
 <body>
-  <div id="loading_page">
-    <div class="set">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <p>리뉴얼 진행 중입니다.</p>
-  </div>
 
-  <div class="bg-text-container">
-    <div class="animate-text">
-      <span>QUAVESRE</span>
-      <span>QUAVESRE</span>
-    </div>
-    <div class="animate-text left">
-      <span>QUAVESRE</span>
-      <span>QUAVESRE</span>
-    </div>
-  </div>
 
-  <div class="container" id="content_page">
-    <div class="col">
-      <div id="popup">
-        <div id="popmenu">
-          <span>죄송합니다.<br />준비중입니다.</span>
-          <div class="exit">닫기</div>
+  <header>
+    <div class="inner">
+      <a href="../index.html" class="logo">
+        <img src="../img/logo-quaverse.png" alt="logo" />
+        <span>Under Water Metaverse</span>
+      </a>
+      <div class="right">
+        <a href="http://www.quaplay.com/" class="button">쿠아플레이<i class="fas fa-arrow-down"></i></a>
+        <a href="#">지원</a>
+        <div class="language">
+          <a href="#" class="on">KR</a>
+          <a href="#">EN</a>
+          <a href="#">JP</a>
         </div>
       </div>
-      <h1>UNDER WATER METAVERES</h1>
-      <p>
-        더 이상 지상이 아닌 수중 메타버스에서 친구, 가족과 함께 즐기세요!</br>
-        쿠아버스는 AI 기반 수중 생태계로 실제 자연환경과 유사한 메타버스를 체험하실 수 있습니다.
-      </p>
     </div>
-  </div>
+  </header>
 
-  <div class="gnb">
+
+  <section>
+    <div class="inner">
+      <div id="index-left-btn" class="index-btn">
+        <a href="#">
+          <i class="fa-solid fa-angles-left"></i>
+        </a>
+      </div>
+
+
+      <article>
+        <div id="index-text">
+            <h1>UNDER WATER</h1>
+            <h1>METAVERSES</h1>
+            <p>더 이상 지상이 아닌 수중 메타버스에서 친구, 가족들과 함께 즐기세요!</p>
+            <p>쿠아버스는 AI 기반 수중 생태계로 실제 자연환경과 유사한 메타버스를 체험하실 수 있습니다.</p>
+        </div>
+        <div id="index-video">
+            <video src="../../img/index-video1.mp4" type="video/mp4"  class="swiper-slide" autoplay loop muted preload="auto"></video>
+            <video src="../../img/index-video2.mp4" type="video/mp4" class="swiper-slide" autoplay loop muted preload="auto"></video>
+            <video src="../../img/index-video3.mp4" type="video/mp4"  class="swiper-slide" autoplay loop muted preload="auto"></video>
+            <video src="../../img/index-video4.mp4" type="video/mp4" class="swiper-slide" autoplay loop muted preload="auto"></video>
+        </div>
+      </article>
+
+
+      <div id="index-right-btn" class="index-btn">
+        <a href="#">
+          <i class="fa-solid fa-angles-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <aside>
     <ul>
       <li><a href="../html/about/about_ceo.html">ABOUT</a></li>
       <li><a href="../html/service/service.html">SERVICE</a></li>
       <li><a href="../html/business/business-main.html">BUSINESS</a></li>
       <li><a href="../html/news/news-main.html">NEWS</a></li>
-      <li>
-        <a id="popup_contents">COMMUNITY</a>
-      </li>
+      <li><a id="popup_contents">COMMUNITY</a></li>
     </ul>
-  </div>
+  </aside>
 
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/loading.js"></script>
-  <script src="./js/scroll_none.js"></script>
-  <script src="./js/popup.js"></script>
+
+  <footer>
+    <div class="inner">
+      <div class="left">
+        <div class="top">
+          <p>Copyright QUATOPS. All rights reserved.</p>
+          <p>충청북도 청주시 흥덕구 가로수로 1251, 충북대학교 G-테크 벤처센터 304-1호</p>
+          
+        </div>
+        <div class="bottom">
+          <a href="#">개인정보처리방침</a>
+          <a href="tel-av:0432335889" class="tel">TEL. 043-233-5889</a>
+          <a href="#" class="fax">FAX. 043-233-5881</a>
+          <a href="#" class="fax">Email. quatops.naver.com</a>
+        </div>
+      </div>
+      <div class="right">
+        <a href="#"><img src="../img/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="../img/instargram.svg" alt="instargram" /></a>
+        <a href="#"><img src="../img/youtube.svg" alt="youtube" /></a>
+        <a href="#"><img src="../img/twiter.svg" alt="twiter" /></a>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
-
-<footer>
-  <div class="left">
-    <div class="top">
-      <p>Copyright QUATOPS. All rights reserved.</p>
-      <a href="#">개인정보처리방침</a>
-    </div>
-    <div class="bottom">
-      <p>
-        충청북도 청주시 흥덕구 가로수로 1251, 충북대학교 G-테크 벤처센터
-        304-1호
-      </p>
-      <a href="tel-av:0432335889" class="tel">TEL. 043-233-5889</a>
-      <a href="#" class="fax">FAX. 043-233-5881</a>
-    </div>
-  </div>
-  <div class="right">
-    <a href="#"><img src="../img/facebook.svg" alt="facebook" /></a>
-    <a href="#"><img src="../img/instargram.svg" alt="instargram" /></a>
-    <a href="#"><img src="../img/youtube.svg" alt="youtube" /></a>
-    <a href="#"><img src="../img/twiter.svg" alt="twiter" /></a>
-  </div>
-</footer>
 
 </html>

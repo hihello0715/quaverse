@@ -2,11 +2,13 @@
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  font-family: montserrat;
+  font-family: 'montserrat';
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul {
@@ -16,7 +18,7 @@ ul {
 html,
 body {
   margin: 0;
-  position: relative;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -27,20 +29,31 @@ body {
   background: #141414;
 }
 
-.inner {
-  width: 1200px;
-  margin: 0 auto;
-}
+
 
 /* header */
-header .inner {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
+
+header{
+  width: 100vw;
+  height: 90px;
+  background-color: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
-header a {
-  color: #fff;
+header .inner {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 150px;
 }
 
 header .logo span {
@@ -48,26 +61,25 @@ header .logo span {
   font-size: 10px;
 }
 
-header .logo img {
-  width: 150px;
-}
-
 header .right {
-  display: flex;
   width: 30%;
+  height: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header .right .button {
-  display: flex;
+  width: 130px;
+  height: 34px;
+  padding: 0 20px;
   border: 1px solid #fff;
   border-radius: 30px;
-  width: 80px;
-  height: 30px;
+  font-size: 15px;
+  letter-spacing: -1px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
 }
 
 header .right .language a {
@@ -79,155 +91,165 @@ header .right .language a.on {
   font-weight: 600;
 }
 
-/* body */
-.bg-text-container {
-  top: 25%;
-  position: absolute;
-  z-index: -999;
-  transform: skewY(-5deg);
-}
-@keyframes text-scrolling {
-  0% {
-    transform: translate(-50%);
-  }
-  100% {
-    transform: translate(50%);
-  }
-}
-.animate-text {
-  animation: text-scrolling 20s linear infinite;
-  will-change: transform;
-  display: block;
-  position: relative;
-  white-space: nowrap;
-}
-.animate-text.left {
-  animation-direction: reverse;
-}
-.animate-text span {
-  font-size: 200px;
-  color: transparent;
-  -webkit-text-stroke: 2px #ed1212;
-  text-transform: uppercase;
-  display: inline-block;
-  line-height: 1;
-  min-width: auto;
-  font-weight: 800;
-}
 
-.container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-.container h1 {
-  font-size: 90px;
-  margin: 0;
-}
-.container p {
-  font-size: 18px;
-  font-weight: 200;
-  margin: 0;
-}
 
-.gnb ul {
-  display: flex;
-  position: absolute;
-  right: -250px;
-  top: 50%;
-  transform: translateY(-50%);
-  transform: rotate(90deg);
-}
-.gnb a {
-  color: #fff;
-  margin: 0 20px;
-  font-weight: 600;
-}
-/*팝업창*/
-#popup {
-  display: none; /*숨기기*/
-  position: fixed;
+/* section */
+
+section{
   width: 100%;
   height: 100%;
-}
-
-#popmenu {
-  position: absolute;
-  align-items: center;
   display: flex;
   justify-content: center;
-  text-align: center;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 200px;
-  font-weight: 500;
-  color: #000;
-  background: #fff;
-}
-#popmenu img {
-  display: flex;
-}
-#popmenu span {
-  display: block;
-  font-size: 20px;
+  align-items: center;
 }
 
-.exit {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translate(-50%, 0);
-  width: 60px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background: #ed1212;
+section .inner{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .inner .index-btn{
+  width: 4%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .inner .index-btn i{
+  font-size: 40px;
   color: #fff;
-  cursor: pointer;
+  display: block;
 }
 
-/*팝업창 본문내용*/
-#contents {
-  cursor: pointer;
+section .inner article{
+  width: 87.5%;
+  height: 100%;
+  position: relative;
 }
-/* footer */
-footer {
+
+section .inner article #index-text{
+  width: 45%;
+  height: 100%;
   position: absolute;
-  bottom: 20px;
-  display: flex;
-  color: #aaa;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 13px;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
+
+section .inner article #index-text{
+  position: absolute;
+  top: 29%;
+  left: 0;
+}
+
+section .inner article #index-text h1{
+  font-size: 45px;
+  line-height: 0px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+}
+
+section .inner article #index-text p{
+  font-size: 16px;
+  line-height: 10px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+section .inner article #index-video{
+  width: 88%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+section .inner article #index-video video{
+  width: 100%;
+  float: left;
+}
+
+
+
+/* aside */
+
+aside{
+  width: 600px;
+  height: 50px;
+  z-index: 10;
+  transform: rotate(90deg);
+  position: fixed;
+  top: 45%;
+  right: -230px;
+}
+
+aside ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside ul li{
+  float: left;
+}
+
+aside ul li a{
+  font-weight: 600;
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #141414;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 13px;
+  color: #aaa;
+  z-index: 9;
+}
+
+footer .inner{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer a {
   color: #aaa;
 }
-footer .left {
-  border-right: 1px solid #aaa;
-  padding-right: 20px;
-}
+
 footer .left .top,
 footer .left .bottom {
+  height: 30px;
   display: flex;
   align-items: center;
-  height: 25px;
 }
-footer .left .top a {
-  margin-left: 20px;
-  color: #fff;
+
+footer p {
+  margin-left: 40px;
+  white-space: nowrap;
 }
-footer .left .bottom a {
-  margin-left: 20px;
+footer p:first-child {
+  margin-left: 0;
 }
-footer .right a {
-  margin-left: 20px;
+
+footer a {
+  margin-left: 40px;
+  white-space: nowrap;
+}
+footer a:first-child {
+  margin-left: 0;
 }

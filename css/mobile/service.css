@@ -1,9 +1,15 @@
 @charset "UTF-8";
 /*메인*/
+html, body{
+  overflow-y: unset;
+}
 .content {
   padding: 15px;
   width: 280px;
   height: 220px;
+}
+.content:nth-child(1) {
+  margin-top: 0;
 }
 .service_content {
   display: block;
@@ -45,4 +51,17 @@
 .video_content span {
   font-size: 16px;
   padding-right: 16px;
+}
+footer .left{
+  padding: 0 20px;
+}
+.content{
+  margin-bottom: -20px;
+  height: 180px;
+}
+.content p{
+  display: none;
+}
+footer{
+  transform: translateY(10px);
 }

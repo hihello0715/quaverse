@@ -17,7 +17,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -165,6 +165,7 @@ header .right .language a.on {
 
 .main .right {
   width: 50%;
+  height: 520px;
 }
 .main .right iframe {
   width: 100%;
@@ -279,4 +280,14 @@ footer .left .bottom a {
 
 footer .right a {
   margin-left: 20px;
+}
+
+.tel_left p{
+  margin: 0;
+}
+.tel_right p{
+  margin: 0;
+}
+.main .top, .main .bottom{
+  height: 260px;
 }

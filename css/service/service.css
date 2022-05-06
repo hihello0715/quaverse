@@ -21,7 +21,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   color: #fff;
 }
 
@@ -139,8 +139,8 @@ header .right .language a.on {
   align-items: center;
   justify-content: space-between;
   padding: 60px;
-  width: 550px;
-  height: 580px;
+  width: 580px;
+  height: 515px;
   margin-top: 40px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -151,7 +151,7 @@ header .right .language a.on {
 }
 .content .explanation {
   line-height: 0.5;
-  margin-top: 50px;
+  margin-top: 25px;
   font-size: 15px;
 }
 .subtitle {

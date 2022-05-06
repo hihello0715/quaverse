@@ -2,7 +2,8 @@
 
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: unset;
+  overflow-y: unset;
 }
 
 .main {
@@ -27,8 +28,30 @@ body {
 
 .main .right {
   width: auto;
+  height: 260px;
 }
 .main .right iframe {
   height: auto;
   margin-top: 20px;
+}
+
+.tel_left p{
+  margin: 0;
+  margin-top: 12px;
+}
+.tel_right p{
+  margin: 0;
+  margin-top: 12px;
+}
+.main .top{
+  height: 165px;
+}
+.main .bottom{
+  height: 145px;
+}
+footer .left{
+  padding: 0 20px;
+}
+footer{
+  transform: translateY(150px);
 }

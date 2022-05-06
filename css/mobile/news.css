@@ -1,6 +1,14 @@
 @charset "UTF-8";
-
+html, body{
+  overflow-y: unset;
+}
 .main .set .img,
 .main .set {
   width: 300px;
+}
+footer .left{
+  padding: 0 20px;
+}
+footer{
+  transform: translateY(10px);
 }

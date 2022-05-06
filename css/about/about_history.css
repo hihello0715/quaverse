@@ -20,7 +20,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   color: #fff;
 }
 
@@ -134,9 +134,13 @@ header .right .language a.on {
 }
 
 .main {
-  margin: 50px 0;
-  opacity: 0;
-  margin: 2em auto;
+  width: 100%;
+  height: 645px;
+  margin: 30px 0;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  /* margin: 2em auto; */
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -152,125 +156,72 @@ header .right .language a.on {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
 }
-
-.main .timeline {
-  position: relative;
-  height: 100px;
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.main .events-wrapper {
-  position: relative;
-  height: 100%;
-  margin: 0 35px;
-  overflow: hidden;
-}
-
-.main .events-wrapper::after,
-.main .events-wrapper::before {
-  /* these are used to create a shadow effect at the sides of the timeline */
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  height: 100%;
-  width: 20px;
-}
-
-.main .events {
-  /* this is the grey line/timeline */
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 49px;
-  height: 2px;
-  /* width will be set using JavaScript */
-  background: #dfdfdf;
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.main .filling-line {
-  /* this is used to create the green line filling the timeline */
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #ed1212;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
-}
-
-.main .events a {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  text-align: center;
-  font-size: 1.3rem;
-  padding-bottom: 15px;
-}
-
-.main .events a::after {
-  /* this is used to create the event spot */
-  content: "";
+.main #up_btn, .main #down_btn{
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  right: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  border: 2px solid #dfdfdf;
-  background-color: #f8f8f8;
-  -webkit-transition: background-color 0.3s, border-color 0.3s;
-  -moz-transition: background-color 0.3s, border-color 0.3s;
-  transition: background-color 0.3s, border-color 0.3s;
+  transform: translateX(-50%);
+  border: none;
+  overflow: visible;
+  text-indent: unset;
+}
+.main #up_btn i, .main #down_btn i{
+  font-size: 40px;
+  color: #fff;
+  z-index: 999;
+}
+.main #up_btn{
+  top: 0;
+  opacity: 0;
+}
+.main #down_btn{
+  top: unset;
+  bottom: 0; 
+}
+.main ul{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  position: absolute;
+  top: -33px;
+  left: 0;
+}
+.main ul li{
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 0;
 }
 
-.main .events a:hover::after {
-  background-color: #ed1212;
+.main ul li em{
+  font-size: 30px;
+  font-weight: 500;
+  width: 250px;
+  display: block;
+  float: left;
+  line-height: 90px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 108, 108, 0.5);
 }
 
-.main .events a.selected {
-  pointer-events: none;
+.main ul li p{
+  font-size: 16px;
+  font-weight: 500;
+  transform: translateY(33px);
+  color: #fff;
 }
 
-.main .events a.selected::after {
-  background-color: #ed1212;
-  border-color: #ed1212;
-}
-
-.main .events a.older-event::after {
-  border-color: #ed1212;
+.main ul li:first-child p{
+  transform: translateY(23px);
 }
 
 @media only screen and (min-width: 1100px) {
-  .main {
+  /* .main {
     margin: 6em auto;
-  }
+  } */
 
   .main::before {
     /* never visible - this is used in jQuery to check the current MQ */
