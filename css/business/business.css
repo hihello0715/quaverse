@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* section */
+
+section {
+    width: 100%;
+    height: 129%;
+}
+
+section .inner {
+    margin: 0 auto;
+    width: 70%;
+    height: 60%;
+}
+
+.title {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .title h1 {
+    position: relative;
+  }
+  .title h1::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .title .tap {
+    display: flex;
+  }
+  .title .tap a {
+    padding: 0 15px;
+    font-weight: 600;
+  }
+  .title .tap a:hover {
+    transition: all 0.3s;
+    color: #ed1212;
+  }
+  .title .tap a.on {
+    position: relative;
+    color: #ed1212;
+  }
+  .title .tap a.on::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ed1212;
+  }
+  
+  .main {
+    font-family: "Noto Sans KR", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0.5;
+    text-align: center;
+  }
+  .main .text {
+    margin-bottom: 80px;
+  }
+  .main .button {
+    border: 1px solid #ed1212;
+    color: #ed1212;
+    padding: 20px 100px;
+    transition: all 0.3s;
+    font-size: 20px;
+  }
+  .main .button:hover {
+    color: #fff;
+    background: #ed1212;
+    transition: all 0.3s;
+  }

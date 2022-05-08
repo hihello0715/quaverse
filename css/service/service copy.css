@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: montserrat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  color: #fff;
+}
+
+body {
+  background: #141414;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+header .inner {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+}
+
+header a {
+  color: #fff;
+}
+
+header .logo span {
+  color: #aaa;
+  font-size: 10px;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .right {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .right .button {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header .right .language a {
+  margin-left: 10px;
+}
+
+header .right .language a.on {
+  color: #ed1212;
+  font-weight: 600;
+}
+
+/* body */
+
+.title {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title h1 {
+  position: relative;
+}
+.title h1::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+}
+.title .tap {
+  display: flex;
+}
+
+.title .tap a {
+  padding: 0 15px;
+}
+
+.title .tap a:hover {
+  color: #ed1212;
+}
+
+.title .tap a.on {
+  position: relative;
+  color: #ed1212;
+  font-weight: 600;
+}
+
+.title .tap a.on::after {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ed1212;
+}
+
+/* service main*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  width: 580px;
+  height: 515px;
+  margin-top: 40px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 0.8;
+}
+.content .explanation {
+  line-height: 0.5;
+  margin-top: 25px;
+  font-size: 15px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.service_icon {
+  background: #ed1212;
+  border-radius: 50%;
+  padding: 25px;
+}
+.service_icon img {
+  width: 100px;
+  height: 100px;
+}
+.service_content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.detail_btn {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #ed1212;
+  border: 1px solid #ed1212;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+.detail_btn:hover {
+  color: #fff;
+  background: #ed1212;
+  transition: all 0.3s;
+}
+
+/*service edumetaverse*/
+.eduMetaverse_video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.eduMetaverse_video video {
+  display: flex;
+  width: 800px;
+  height: 450px;
+}
+.video_content {
+  margin-top: 15px;
+}
+.video_content span {
+  display: block;
+  font-size: 18px;
+}
+/* gnb */
+.gnb ul {
+  display: flex;
+  position: absolute;
+  right: -250px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+}
+
+.gnb a {
+  color: #fff;
+  margin: 0 20px;
+  font-weight: 600;
+}
+.gnb a.on {
+  color: #ed1212;
+}
+/*팝업창*/
+#popup {
+  display: none; /*숨기기*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+#popmenu {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+}
+#popmenu img {
+  display: flex;
+}
+#popmenu span {
+  display: block;
+  font-size: 20px;
+}
+
+.exit {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #ed1212;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*팝업창 본문내용*/
+#contents {
+  cursor: pointer;
+}
+/* footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  color: #aaa;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer .left {
+  border-right: 1px solid #aaa;
+  padding-right: 20px;
+}
+
+footer .left .top,
+footer .left .bottom {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+footer .left .top a {
+  margin-left: 20px;
+  color: #fff;
+}
+
+footer .left .bottom a {
+  margin-left: 20px;
+}
+
+footer .right a {
+  margin-left: 20px;
+}

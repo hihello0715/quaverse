@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/* section */
+
+section {
+    width: 100%;
+    height: 129%;
+}
+
+section .inner {
+    margin: 0 auto;
+    width: 70%;
+    height: 60%;
+}
+
+
+
+
+
+/* 서브메뉴 */
+
+section .inner .sub-title {
+    width: 100%;
+    margin-top: 150px;
+}
+
+section .inner .sub-title p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* section */
+
+.inner .main{
+    width: 100%;
+    height: 100%;
+    margin-top: 18vh;
+    position: relative;
+}
+  .inner ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .inner ul li{
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .inner ul li em{
+    font-size: 30px;
+    font-weight: 500;
+    width: 250px;
+    display: block;
+    float: left;
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 108, 108, 0.5);
+  }
+  .inner ul li .history-text{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  .inner ul li p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .inner ul li p b{
+    font-weight: 500;
+    color: #FFD392;
+  }
+
+  .inner ul li p i{
+    font-size: 13px;
+    color: #aaa;
+  }
