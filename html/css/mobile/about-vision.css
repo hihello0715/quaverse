@@ -86,7 +86,7 @@ section .inner #info-awards-wrap .info p{
     word-break: break-all;
 }
 section .inner #info-awards-wrap .info a{
-    font-size: 1px;
+    font-size: 11px;
 }
 section .inner #info-awards-wrap .info b{
     font-size: 12px;
@@ -117,6 +117,7 @@ section .inner #info-awards-wrap #info-wrap .info:nth-child(2){
 }
 section .inner #info-awards-wrap #info-wrap .info:last-child{
     margin-left: 4%;
+    padding-top: 32px;
 }
 
 /* 비전 - 기업현황 */

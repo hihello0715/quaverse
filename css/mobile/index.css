@@ -38,13 +38,13 @@ section .inner{
 }
 section .inner .index-btn{
   position: absolute;
-  top: 15%;
-  left: 40%;
+  top: 25%;
+  left: 13%;
   z-index: 9;
 }
 section .inner #index-right-btn{
   left: unset;
-  right: 40%;
+  right: 13%;
 }
 section .inner .index-btn i{
   font-size: 25px;
