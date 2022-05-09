@@ -134,16 +134,10 @@ section .inner article #index-text{
   width: 45%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 29%;
   left: 0;
   white-space: nowrap;
   z-index: 1;
-}
-
-section .inner article #index-text{
-  position: absolute;
-  top: 29%;
-  left: 0;
 }
 
 section .inner article #index-text h1{
@@ -227,10 +221,6 @@ footer .inner{
   align-items: center;
 }
 
-footer a {
-  color: #aaa;
-}
-
 footer .left .top,
 footer .left .bottom {
   height: 30px;
@@ -248,6 +238,7 @@ footer p:first-child {
 
 footer a {
   margin-left: 40px;
+  color: #aaa;
   white-space: nowrap;
 }
 footer a:first-child {

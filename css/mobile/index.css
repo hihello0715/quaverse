@@ -1,23 +1,131 @@
 @charset "UTF-8";
-html,
-body {
-  overflow-x: scroll;
-}
-.container p {
+
+
+
+
+
+/* header */
+
+header .inner{
   width: 80%;
 }
-.container {
-  width: 320px;
+
+header .logo img{
+  width: 110px;
 }
-.container h1 {
+header .logo span{
+  display: none;
+}
+header .right{
+  width: 50%;
+}
+header .right .button{
+  display: none;
+}
+header .right .language a{
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+
+
+
+/* section */
+
+section .inner{
+  width: 80%;
+}
+section .inner .index-btn{
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  z-index: 9;
+}
+section .inner #index-right-btn{
+  left: unset;
+  right: 40%;
+}
+section .inner .index-btn i{
+  font-size: 25px;
+}
+section .inner article{
+  width: 100%;
+}
+section .inner article #index-text{
+  width: 100%;
+  top: 0%;
+  text-align: center;
+  white-space: unset;
+}
+section .inner article #index-text h1{
   font-size: 30px;
 }
-.container .col span {
+section .inner article #index-text p{
+  font-size: 12px;
+  white-space: pre-line	;
+  line-height: 16px;
+}
+section .inner article #index-video{
+  width: 100%;
+  height: 135px;
+  top: 40%;
+}
+
+
+
+
+
+/* aside */
+
+aside{
+  right: -281px;
+}
+aside ul li a{
+  font-size: 12px;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+  height: 90px;
+}
+footer .inner{
+  width: 90%;
+}
+footer a{
+  font-size: 10px;
+  margin-left: 10px;
+}
+footer p{
+  font-size: 10px;
+  margin-left: 0;
+  line-height: 12px;
+  text-align: center;
+}
+footer .left .top{
   display: block;
 }
-footer .left{
-  padding: 0 20px;
+
+footer .left .top p:first-child{
+  width: 100%;
+
 }
-footer{
-  transform: translateY(150px);
+footer .left .bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+footer .left .bottom a:first-child{
+  display: none;
+}
+footer .left .bottom a:nth-child(2){
+  margin-left: 0;
+}
+footer .right{
+  display: none;
 }

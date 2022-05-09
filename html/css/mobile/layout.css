@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+
+
+
+/* header */
+
+header {
+    height: 90px;
+    padding-top: 10px;
+}
+
+header .inner {
+    width: 80%;
+    height: 60%;
+}
+
+header .logo img {
+    width: 110px;
+}
+
+header .logo span {
+    display: none;
+}
+
+header .right {
+    width: 50%;
+}
+
+header .right .button {
+    display: none;
+}
+
+header .right .language a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+header #submenu {
+    width: 80%;
+    height: 10px;
+    padding-top: 10px;
+}
+
+header #submenu ul li a {
+    font-size: 11px;
+}
+
+header #submenu ul li:first-child {
+    display: none;
+}
+
+header #submenu ul li:last-child {
+    display: none;
+}
+
+
+
+
+
+/* aside */
+
+aside {
+    right: -281px;
+}
+
+aside ul li a {
+    font-size: 12px;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    height: 90px;
+}
+
+footer .inner {
+    width: 90%;
+}
+
+footer a {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    margin-left: 0;
+    line-height: 12px;
+    text-align: center;
+}
+
+footer .left .top {
+    display: block;
+}
+
+footer .left .top p:first-child {
+    width: 100%;
+
+}
+
+footer .left .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+footer .left .bottom a:first-child {
+    display: none;
+}
+
+footer .left .bottom a:nth-child(2) {
+    margin-left: 0;
+}
+
+footer .right {
+    display: none;
+}

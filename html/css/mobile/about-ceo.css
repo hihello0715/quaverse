@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+
+
+
+/* header */
+
+section .inner{
+    width: 80%;
+}
+section .inner #text{
+    height: 100%;
+}
+section .inner #text #title{
+    width: 100%;
+    height: 90px;
+    margin-top: 0;
+}
+section .inner #text #title h3{
+    font-size: 20px;
+    line-height: 26px;
+    word-break: keep-all;
+}
+section .inner #text #title img{
+    width: 70px;
+    height: 70px;
+    top: -10px;
+}
+section .inner #text span{
+    font-size: 11px;
+    line-height: 20px;
+    word-break: keep-all;
+}
+section .inner #text p{
+    font-size: 11px;
+    word-break: keep-all;
+    line-height: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section .inner {
+  width: 80%;
+  margin-top: 16vh;
+}
+
+/* header */
+
+.main .set .img,
+.main .set {
+  width: 100%;
+}
+
+.main .set_box{
+  width: 100%;
+  overflow: hidden;
+}

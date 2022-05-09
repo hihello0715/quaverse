@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+
+/*메인*/
+section .inner {
+    width: 80%;
+    margin-top: 16vh;
+}
+
+html,
+body {
+    overflow-y: unset;
+}
+
+.content {
+    padding: 15px;
+    width: 280px;
+    height: 220px;
+}
+
+.content:nth-child(1) {
+    margin-top: 0;
+}
+
+.service_content {
+    display: block;
+    text-align: center;
+}
+
+.service_icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.service_icon {
+    padding: 15px;
+}
+
+.content h2 {
+    font-size: 15px;
+}
+
+.content p {
+    font-size: 12px;
+}
+
+.content .explanation {
+    line-height: 0.5;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+/*서비스 탭*/
+.detail_btn {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.tap a {
+    font-size: 12px;
+}
+
+/*서비스 서브 타이틀*/
+.eduMetaverse_video video {
+    width: 290px;
+    height: 163.125px;
+}
+.video_content{
+    width: 100%;
+    display: block;
+}
+.video_content span:first-child {
+    font-size: 14px;
+    padding-right: 0;
+    line-height: 18px;
+    word-break: keep-all;
+    white-space: unset;
+}
+
+.video_content span {
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 0;
+    word-break: keep-all;
+}
+
+footer .left {
+    padding: 0 20px;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: -130px;
+    height: 180px;
+}
+
+.content p {
+    display: none;
+}
+
+footer {
+    transform: translateY(10px);
+}
