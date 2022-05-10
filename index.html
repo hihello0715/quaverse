@@ -6,12 +6,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mobile/index.css">
   <script src="https://kit.fontawesome.com/f1268f802e.js" crossorigin="anonymous"></script>
-  <script src="../js/jquery-3.6.0.min.js"></script>
-  <script src="../js/index-swipe.js"></script>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <body>
 
@@ -37,13 +37,6 @@
 
   <section>
     <div class="inner">
-      <div id="index-left-btn" class="index-btn">
-        <a href="#">
-          <i class="fa-solid fa-angles-left"></i>
-        </a>
-      </div>
-
-
       <article>
         <div id="index-text">
             <h1>UNDER WATER</h1>
@@ -51,20 +44,30 @@
             <p>더 이상 지상이 아닌 수중 메타버스에서 친구, 가족들과 함께 즐기세요!</p>
             <p>쿠아버스는 AI 기반 수중 생태계로 실제 자연환경과 유사한 메타버스를 체험하실 수 있습니다.</p>
         </div>
-        <div id="index-video">
-            <video src="../../img/index-video1.mp4" type="video/mp4"  class="swiper-slide" autoplay loop muted preload="auto"></video>
-            <video src="../../img/index-video2.mp4" type="video/mp4" class="swiper-slide" autoplay loop muted preload="auto"></video>
-            <video src="../../img/index-video3.mp4" type="video/mp4"  class="swiper-slide" autoplay loop muted preload="auto"></video>
-            <video src="../../img/index-video4.mp4" type="video/mp4" class="swiper-slide" autoplay loop muted preload="auto"></video>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video src="img/index-video1.mp4" muted autoplay loop></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="img/index-video2.mp4" muted autoplay loop></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="img/index-video3.mp4" muted autoplay loop></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="img/index-video5.mp4" muted autoplay loop></video>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
       </article>
 
 
-      <div id="index-right-btn" class="index-btn">
-        <a href="#">
-          <i class="fa-solid fa-angles-right"></i>
-        </a>
-      </div>
+
     </div>
   </section>
 
@@ -73,9 +76,7 @@
     <ul>
       <li><a href="../html/about/about-ceo.html">ABOUT</a></li>
       <li><a href="../html/service/service.html">SERVICE</a></li>
-      <li><a href="../html/business/business-main.html">BUSINESS</a></li>
       <li><a href="../html/news/news-main.html">NEWS</a></li>
-      <li><a id="popup_contents">COMMUNITY</a></li>
     </ul>
   </aside>
 
@@ -104,7 +105,14 @@
     </div>
   </footer>
 
-
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  </script>
 </body>
 
 </html>

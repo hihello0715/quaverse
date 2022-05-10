@@ -137,13 +137,13 @@ header #submenu ul li:last-child {
 /* aside */
 
 aside {
-    width: 600px;
+    width: 500px;
     height: 50px;
     z-index: 10;
     transform: rotate(90deg);
     position: fixed;
     top: 45%;
-    right: -230px;
+    right: -180px;
 }
 
 aside ul {
