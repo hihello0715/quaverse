@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 
 /* section */
 html,
@@ -51,6 +49,9 @@ section .inner .sub-title p {
   background-color: rgba(255, 255, 255, 0.03);
   padding: 15px 15px;
 }
+.main .set .set_title{
+  line-height: 130%;
+}
 .main .set_box .img{
   background: url(../../img/vrar_background.jpg) center no-repeat;
   background-size: 100%;
@@ -58,7 +59,7 @@ section .inner .sub-title p {
   height: 190px;
 }
 .main .set_box._1 .img._2 {
-  background: url(../../img/2498113_2496504_208.jpg) center no-repeat;
+  background: url(../../img/2498113_2496504_208.jpg) no-repeat;
   background-size: 100%;
 }
 .main .set_box._1 .img._3 {

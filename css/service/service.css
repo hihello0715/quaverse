@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
@@ -53,11 +52,14 @@ section .inner {
 .service_icon {
   background: #ed1212;
   border-radius: 50%;
-  padding: 25px;
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .service_icon img {
-  width: 100px;
-  height: 100px;
+  width: 70%;
 }
 .service_content {
   display: flex;
