@@ -48,7 +48,7 @@ section .inner .sub-title p {
   word-break: keep-all;
   width: 30%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.09);
+  background-color: rgba(255, 255, 255, 0.03);
   padding: 15px 15px;
 }
 .main .set_box .img{
