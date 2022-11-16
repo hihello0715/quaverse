@@ -4,6 +4,10 @@
 
 
 /* section */
+html,
+body {
+    overflow-x: inherit;
+} 
 
 section {
     width: 100%;
@@ -41,14 +45,35 @@ section .inner .sub-title p {
   margin-bottom: 50px;
 }
 .main .set {
-  width: 350px;
-  height: 320px;
+  word-break: keep-all;
+  width: 30%;
+  height: auto;
   background-color: rgba(255, 255, 255, 0.09);
-  padding: 15px;
+  padding: 15px 15px;
 }
-.main .set .img {
-  background: url(../../img/vrar_background.jpg) center;
+.main .set_box .img{
+  background: url(../../img/vrar_background.jpg) center no-repeat;
   background-size: 100%;
-  width: 320px;
+  width: 100%;
   height: 190px;
+}
+.main .set_box._1 .img._2 {
+  background: url(../../img/2498113_2496504_208.jpg) center no-repeat;
+  background-size: 100%;
+}
+.main .set_box._1 .img._3 {
+  background: url(../../img/1366167_1172274_218.jpg) center no-repeat;
+  background-size: 100%;
+}
+.main .set_box._2 .img._1 {
+  background: url(../../img/image_readtop_2022_762581_16619107465150704.jpg) center no-repeat;
+  background-size: 100%;
+}
+.main .set_box._2 .img._2 {
+  background: url(../../img/1772359_689583_3617.jpg) center no-repeat;
+  background-size: 100%;
+}
+.main .set_box._2 .img._3 {
+  background: url(../../img/756243131_EB8BA8ECB2B4EC82ACECA784.jpg) center no-repeat;
+  background-size: 100%;
 }
